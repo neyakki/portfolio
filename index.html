@@ -8,32 +8,29 @@
         <link rel="stylesheet" href="style/main.css" />
     </head>
     <body>
-        <div class="center_abs"></div>
-
         <header class="header">
             <div class="logo">
-                <span class="symbol_accent">&lt;N</span>eyakki
-                <span class="symbol_accent"> /&gt;</span>
+                <a href="#welcome-page">
+                    <span class="symbol_accent">&lt;N</span>eyakki
+                    <span class="symbol_accent"> /&gt;</span>
+                </a>
             </div>
 
             <nav class="navbar">
                 <ul>
-                    <li class="navbar__item navbar__item_active">
-                        <a href="#">Welcome</a>
+                    <li class="navbar__item">
+                        <a href="#about-page">About me</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#">About me</a>
+                        <a href="#skills-page">Skills</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#">Skills</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#">Portfolio</a>
+                        <a href="#portfolio-page">Portfolio</a>
                     </li>
                 </ul>
             </nav>
 
-            <a href="mailto:na011912@gmail.com" class="btn btn__stroke">
+            <a href="mailto:na011912@gmail.com" class="btn btn__stroke btn__with-icon">
                 <span>Hire Me</span>
                 <svg
                     class="icon"
@@ -59,7 +56,12 @@
         </header>
 
         <main class="main">
-            <section class="welcome">
+            <section class="welcome" id="welcome-page">
+                <div class="bg-video">
+                    <video muted autoplay loop>
+                        <source src="video/code_1.mp4" type="video/mp4" />
+                    </video>
+                </div>
                 <section class="welcome__main">
                     <article class="welcome__text">
                         <h1>Full-stack Web Developer</h1>
@@ -68,8 +70,9 @@
                             satisfaction, and I am happy to devote myself to this process.
                         </p>
                     </article>
-                    <article class="welcome__avatar">
+                    <article class="welcome__cv">
                         <svg
+                            class="welcome__avatar"
                             viewBox="0 0 1192 1035"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -110,25 +113,32 @@
                                 </pattern>
                             </defs>
                         </svg>
+
+                        <a
+                            href=""
+                            title="Download CV"
+                            download="cv.md"
+                            class="welcome__cv-btn btn btn__fill"
+                        >
+                            CV
+                        </a>
                     </article>
                 </section>
                 <section class="welcome__info">
-                    <div class="welcome__info-content">
-                        <article class="welcome__info-short">
-                            <article class="welcome__info-item">
-                                <span class="welcome__info-number">2</span>
-                                <span class="welcome__info-text">Years of experience</span>
-                            </article>
-                            <article class="welcome__info-item">
-                                <span class="welcome__info-number">2</span>
-                                <span class="welcome__info-text">Winning hackathons</span>
-                            </article>
-                            <article class="welcome__info-item">
-                                <span class="welcome__info-number">10</span>
-                                <span class="welcome__info-text">Project Completed</span>
-                            </article>
+                    <article class="welcome__info-content">
+                        <article class="welcome__info-item">
+                            <span class="welcome__info-number">2</span>
+                            <span class="welcome__info-text">Years of experience</span>
                         </article>
-                    </div>
+                        <article class="welcome__info-item">
+                            <span class="welcome__info-number">2</span>
+                            <span class="welcome__info-text">Winning hackathons</span>
+                        </article>
+                        <article class="welcome__info-item">
+                            <span class="welcome__info-number">4</span>
+                            <span class="welcome__info-text">Project Completed</span>
+                        </article>
+                    </article>
                 </section>
             </section>
         </main>
