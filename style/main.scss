@@ -2,7 +2,7 @@ $font-size: clamp(14px, 1.4vw, 20px);
 $container-padding-side: max(1rem, calc(50% - 40rem));
 
 $main: #df8722;
-$main-disable: #a7763d;
+$main-disable: #644e36;
 $main-active: #ad7536;
 $main-border: #efa857;
 $main-hover: #efbb80;
@@ -53,6 +53,10 @@ a {
     color: $white;
 }
 
+p {
+    line-height: 1rem * 1.5;
+}
+
 .center_abs {
     z-index: -100;
     position: absolute;
@@ -69,6 +73,7 @@ a {
 
 .header {
     position: fixed;
+    z-index: 100;
 
     width: 100%;
     padding: 0.4rem $container-padding-side;
@@ -150,6 +155,7 @@ a {
 .btn {
     $transition_btn: cubic-bezier(0.3, -0.63, 0.56, 1.39);
     display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: 0.6rem;
 
@@ -264,9 +270,6 @@ a {
     &__avatar {
         display: flex;
 
-        position: relative;
-        left: 1.4rem;
-
         width: min(512px, 22rem);
         height: min(512px, 22rem);
         color: $second;
@@ -304,4 +307,130 @@ a {
             width: min-content;
         }
     }
+}
+
+.about-me {
+    color: $white;
+    position: relative;
+
+    &__bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+
+        .square {
+            position: absolute;
+            border: 2px solid $second;
+        }
+
+        .square-1 {
+            left: -100px;
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .square-2 {
+            top: 200px;
+            right: -100px;
+            width: 15rem;
+            height: 15rem;
+        }
+
+        .square-3 {
+            top: 200px;
+            right: -100px;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    &__main {
+        padding: 0 $container-padding-side;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    &__text,
+    &__skills {
+        & div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.8rem;
+        }
+    }
+
+    &__content {
+        width: fit-content;
+    }
+
+    &__text {
+        width: 50%;
+
+        & .main-info {
+            & p {
+                padding-bottom: 0.6rem;
+            }
+
+            & div {
+                & p {
+                    padding-bottom: 0.4rem;
+                    font-weight: 700;
+                }
+
+                & ul {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+
+    &__skills {
+        display: flex;
+        justify-content: end;
+
+        & div {
+            width: 40%;
+        }
+
+        & .skills {
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(3.4rem, 1fr));
+            gap: 1rem;
+
+            & img {
+                width: 3.2rem;
+                height: 3.2rem;
+
+                background-color: $dark-grey-1;
+                padding: 0.4rem;
+                border-radius: 0.4rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        &__text,
+        &__skills {
+            width: 100%;
+        }
+
+        &__skills {
+            & div {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.footer {
+    padding-top: 1rem;
+    color: $white;
+    font-size: 0.8rem;
+    text-align: center;
 }

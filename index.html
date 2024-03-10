@@ -22,9 +22,6 @@
                         <a href="#about-page">About me</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#skills-page">Skills</a>
-                    </li>
-                    <li class="navbar__item">
                         <a href="#portfolio-page">Portfolio</a>
                     </li>
                 </ul>
@@ -73,28 +70,28 @@
                     <article class="welcome__cv">
                         <svg
                             class="welcome__avatar"
-                            viewBox="0 0 1192 1035"
+                            viewBox="0 0 1024 1042"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
                         >
                             <circle cx="512" cy="512" r="512" fill="currentColor" />
                             <mask
-                                id="mask0_7_10"
+                                id="mask0_24_56"
                                 style="mask-type: alpha"
                                 maskUnits="userSpaceOnUse"
                                 x="0"
                                 y="0"
-                                width="1183"
-                                height="1024"
+                                width="1024"
+                                height="1042"
                             >
                                 <path
-                                    d="M0 512C0 794.77 229.23 1024 512 1024C616.201 1024 713.131 992.872 794 939.408C794 939.408 1037.5 1014.5 1089 993C1140.5 971.5 1175.5 934 1182 879.5C1185.25 852.228 1122.53 701.413 1095 574.5C1067.51 447.796 1075.24 344.985 1058.5 327C1025 291 947.724 243 947.724 243C857.497 97.1605 696.095 0 512 0C229.23 0 0 229.23 0 512Z"
-                                    fill="currentColor"
+                                    d="M512 0C229.23 0 0 229.23 0 512C0 595.712 20.0899 674.731 55.7114 744.5L24 783L181 969.5L285 1017L392 1028L394.5 1011C430.547 1019.04 473.528 1024 512 1024C549.051 1024 591.183 1018.48 626 1011L632 1042L729.5 1028L854 966L907.5 898.5L962.5 842L978 794L961.139 758C1001.21 684.994 1024 601.159 1024 512C1024 229.23 794.77 0 512 0Z"
+                                    fill="black"
                                 />
                             </mask>
-                            <g mask="url(#mask0_7_10)">
-                                <path d="M135 33H1159V1057H135V33Z" fill="url(#pattern0)" />
+                            <g mask="url(#mask0_24_56)">
+                                <rect x="-2" width="1024" height="1024" fill="url(#pattern0)" />
                             </g>
                             <defs>
                                 <pattern
@@ -103,16 +100,20 @@
                                     width="1"
                                     height="1"
                                 >
-                                    <use xlink:href="#image0_7_10" transform="scale(0.000244141)" />
-                                    <image
-                                        id="image0_7_10"
-                                        width="4096"
-                                        height="4096"
-                                        xlink:href="images/1024.png"
-                                    ></image>
+                                    <use
+                                        xlink:href="#image0_24_56"
+                                        transform="scale(0.000976562)"
+                                    />
                                 </pattern>
+                                <image
+                                    id="image0_24_56"
+                                    width="1024"
+                                    height="1024"
+                                    xlink:href="images/avatar/me-2.png"
+                                />
                             </defs>
                         </svg>
+
 
                         <a
                             href=""
@@ -141,7 +142,61 @@
                     </article>
                 </section>
             </section>
+
+            <section class="about-me">
+                <div class="about-me__bg">
+                    <div class="square square-1"></div>
+                    <div class="square square-2"></div>
+                </div>
+                <article class="about-me__main">
+                    <article class="about-me__text">
+                        <div>
+                            <h2 class="about-me__header">Обо мне</h2>
+                            <div class="about-me__content main-info">
+                                <p>
+                                    Привет! Я - Никита, веб-разработчик с более чем двухлетним
+                                    опытом. Моя основная специализация - создание крутых
+                                    веб-приложений. Программирование для меня не просто работа, это
+                                    настоящая страсть, которая мотивирует меня каждый день
+                                    совершенствоваться в своем деле.
+                                </p>
+
+                                <div>
+                                    <p>Мои сильные стороны:</p>
+
+                                    <ul>
+                                        <li>Внимание к деталям и высокое качество кода;</li>
+                                        <li>Отличные коммуникативные навыки;</li>
+                                        <li>Стремление к саморазвитию и достижению целей.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="about-me__skills">
+                        <div>
+                            <h2 class="about-me__header">Навыки</h2>
+                            <div class="about-me__content skills">
+                                <img src="images/skills/html5-original.svg" />
+                                <img src="images/skills/css3-original.svg" />
+                                <img src="images/skills/sass-original.svg" />
+                                <img src="images/skills/javascript-original.svg" />
+                                <img src="images/skills/python-original.svg" />
+                                <img src="images/skills/fastapi-original.svg" />
+                                <img src="images/skills/postgresql-original.svg" />
+                                <img src="images/skills/git-original.svg" />
+                                <img src="images/skills/docker-original.svg" />
+                                <img src="images/skills/linux-original.svg" />
+                                <img src="images/skills/redis-original.svg" />
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </section>
         </main>
+
+        <footer class="footer">&copy; Neyakki</footer>
 
         <script src="scripts/main.js"></script>
     </body>

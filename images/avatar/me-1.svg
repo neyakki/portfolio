@@ -1,0 +1,42 @@
+<svg
+    class="welcome__avatar"
+    viewBox="0 0 1192 1035"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+    <circle cx="512" cy="512" r="512" fill="currentColor" />
+    <mask
+        id="mask0_7_10"
+        style="mask-type: alpha"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="1183"
+        height="1024"
+    >
+        <path
+            d="M0 512C0 794.77 229.23 1024 512 1024C616.201 1024 713.131 992.872 794 939.408C794 939.408 1037.5 1014.5 1089 993C1140.5 971.5 1175.5 934 1182 879.5C1185.25 852.228 1122.53 701.413 1095 574.5C1067.51 447.796 1075.24 344.985 1058.5 327C1025 291 947.724 243 947.724 243C857.497 97.1605 696.095 0 512 0C229.23 0 0 229.23 0 512Z"
+            fill="currentColor"
+        />
+    </mask>
+    <g mask="url(#mask0_7_10)">
+        <path d="M135 33H1159V1057H135V33Z" fill="url(#pattern0)" />
+    </g>
+    <defs>
+        <pattern
+            id="pattern0"
+            patternContentUnits="objectBoundingBox"
+            width="1"
+            height="1"
+        >
+            <use xlink:href="#image0_7_10" transform="scale(0.000244141)" />
+            <image
+                id="image0_7_10"
+                width="4096"
+                height="4096"
+                xlink:href="images/avatar/me-1.png"
+            ></image>
+        </pattern>
+    </defs>
+</svg>

@@ -1,0 +1,45 @@
+<svg
+                            class="welcome__avatar"
+                            viewBox="0 0 1024 1042"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <circle cx="512" cy="512" r="512" fill="currentColor" />
+                            <mask
+                                id="mask0_24_56"
+                                style="mask-type: alpha"
+                                maskUnits="userSpaceOnUse"
+                                x="0"
+                                y="0"
+                                width="1024"
+                                height="1042"
+                            >
+                                <path
+                                    d="M512 0C229.23 0 0 229.23 0 512C0 595.712 20.0899 674.731 55.7114 744.5L24 783L181 969.5L285 1017L392 1028L394.5 1011C430.547 1019.04 473.528 1024 512 1024C549.051 1024 591.183 1018.48 626 1011L632 1042L729.5 1028L854 966L907.5 898.5L962.5 842L978 794L961.139 758C1001.21 684.994 1024 601.159 1024 512C1024 229.23 794.77 0 512 0Z"
+                                    fill="black"
+                                />
+                            </mask>
+                            <g mask="url(#mask0_24_56)">
+                                <rect x="-2" width="1024" height="1024" fill="url(#pattern0)" />
+                            </g>
+                            <defs>
+                                <pattern
+                                    id="pattern0"
+                                    patternContentUnits="objectBoundingBox"
+                                    width="1"
+                                    height="1"
+                                >
+                                    <use
+                                        xlink:href="#image0_24_56"
+                                        transform="scale(0.000976562)"
+                                    />
+                                </pattern>
+                                <image
+                                    id="image0_24_56"
+                                    width="1024"
+                                    height="1024"
+                                    xlink:href="images/me-2.png"
+                                />
+                            </defs>
+                        </svg>
