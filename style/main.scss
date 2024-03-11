@@ -79,7 +79,7 @@ p {
 
     background-color: $dark-grey-3;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
         & .navbar {
             display: none;
         }
@@ -168,7 +168,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 0.6rem;
 
     padding: 0.4rem 1rem;
 
@@ -484,23 +483,30 @@ p {
 
         display: flex;
         flex-direction: column;
+        row-gap: 2rem;
     }
 
     &__text,
     &__skills,
     &__projects {
-        padding: 6rem 0 0 0;
+        padding: 3rem;
 
         & div {
             display: flex;
             flex-direction: column;
             row-gap: 1rem;
         }
+    }
 
-        @media screen and (max-width: 768px) {
-            & {
-                padding: 0;
-            }
+    @media screen and (max-width: 768px) {
+        &__main {
+            row-gap: 1rem;
+        }
+
+        &__text,
+        &__skills,
+        &__projects {
+            padding: 0;
         }
     }
 
@@ -629,8 +635,73 @@ p {
 }
 
 .footer {
-    padding-top: 1rem;
+    width: 100%;
+    height: fit-content;
+    background-color: $dark-grey-3;
     color: $white;
-    font-size: 0.8rem;
-    text-align: center;
+
+    margin-top: 1rem;
+
+    &__wrapper {
+        padding: 0.6rem $container-padding-side;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    & .social {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__buttons {
+            display: flex;
+            column-gap: 1rem;
+        }
+
+        &__btn {
+            border-radius: 100%;
+
+            padding: 0.4rem;
+
+            & svg {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
+
+    &__logo {
+        text-align: center;
+    }
+
+    &__copyright {
+        width: 100%;
+
+        padding-top: 0.4rem;
+
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-between;
+
+        border-top: 2px solid $dark-grey-1;
+        color: $grey-2;
+    }
+
+    @media screen and (max-width: 480px) {
+        & .social {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        &__copyright {
+            flex-direction: column;
+            row-gap: 0.2rem;
+        }
+    }
 }

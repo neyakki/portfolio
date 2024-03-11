@@ -15,8 +15,6 @@ navbarItems.forEach((item) => {
     test[getKey(item.children[0])] = item;
 });
 
-console.log(test);
-
 navbarItems.forEach((navbarItem) => {
     navbarItem.addEventListener("click", (event) => {
         let _elem = event.target.parentElement;
