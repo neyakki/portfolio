@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="header">
-            <div class="logo">
+            <div class="header__logo logo">
                 <a href="#welcome-page">
                     <span class="symbol_accent">&lt;N</span>eyakki
                     <span class="symbol_accent"> /&gt;</span>
@@ -19,37 +19,56 @@
             <nav class="navbar">
                 <ul>
                     <li class="navbar__item">
-                        <a href="#about-page">About me</a>
+                        <a href="#about-me">Обо мне</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#portfolio-page">Portfolio</a>
+                        <a href="#skills">Навыки</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#projects">Проекты</a>
                     </li>
                 </ul>
             </nav>
 
-            <a href="mailto:na011912@gmail.com" class="btn btn__stroke btn__with-icon">
-                <span>Hire Me</span>
-                <svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M9 9L13.5 12L18 9M3 13.5H5M1 10.5H5"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-                    <path
-                        d="M5 7.5V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H20C20.5304 5 21.0391 5.21071 21.4142 5.58579C21.7893 5.96086 22 6.46957 22 7V17C22 17.5304 21.7893 18.0391 21.4142 18.4142C21.0391 18.7893 20.5304 19 20 19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V16.5"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                    />
-                </svg>
-            </a>
+            <div class="header__social">
+                <a href="https://github.com/neyakki" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>GitHub</title>
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205
+                    11.385.6.113.82-.258.82-.577
+                    0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7
+                    3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07
+                    1.835 2.809 1.305
+                    3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93
+                    0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3
+                    1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23
+                    3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805
+                    5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0
+                    .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </a>
+                <a href="https://t.me/neyakki" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>Telegram</title>
+                        <path
+                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </a>
+                <a href="mailto:na011912@gmail.com" target="_blank">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>Gmail</title>
+                        <path
+                            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </a>
+            </div>
         </header>
 
         <main class="main">
@@ -63,65 +82,83 @@
                     <article class="welcome__text">
                         <h1>Full-stack Web Developer</h1>
                         <p>
-                            Creating and programming simple but beautiful things gives me
-                            satisfaction, and I am happy to devote myself to this process.
+                            Создание и программирование простых, но красивых вещей доставляет мне
+                            удовлетворение, и я счастлив посвятить себя этому процессу.
                         </p>
                     </article>
                     <article class="welcome__cv">
-                        <svg
-                            class="welcome__avatar"
-                            viewBox="0 0 1024 1042"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                            <circle cx="512" cy="512" r="512" fill="currentColor" />
-                            <mask
-                                id="mask0_24_56"
-                                style="mask-type: alpha"
-                                maskUnits="userSpaceOnUse"
-                                x="0"
-                                y="0"
-                                width="1024"
-                                height="1042"
+                        <div class="avatar">
+                            <svg
+                                viewBox="0 0 1024 1042"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
                             >
-                                <path
-                                    d="M512 0C229.23 0 0 229.23 0 512C0 595.712 20.0899 674.731 55.7114 744.5L24 783L181 969.5L285 1017L392 1028L394.5 1011C430.547 1019.04 473.528 1024 512 1024C549.051 1024 591.183 1018.48 626 1011L632 1042L729.5 1028L854 966L907.5 898.5L962.5 842L978 794L961.139 758C1001.21 684.994 1024 601.159 1024 512C1024 229.23 794.77 0 512 0Z"
-                                    fill="black"
-                                />
-                            </mask>
-                            <g mask="url(#mask0_24_56)">
-                                <rect x="-2" width="1024" height="1024" fill="url(#pattern0)" />
-                            </g>
-                            <defs>
-                                <pattern
-                                    id="pattern0"
-                                    patternContentUnits="objectBoundingBox"
-                                    width="1"
-                                    height="1"
-                                >
-                                    <use
-                                        xlink:href="#image0_24_56"
-                                        transform="scale(0.000976562)"
-                                    />
-                                </pattern>
-                                <image
-                                    id="image0_24_56"
+                                <circle cx="512" cy="512" r="512" fill="currentColor" />
+                                <mask
+                                    id="mask0_24_56"
+                                    style="mask-type: alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
                                     width="1024"
-                                    height="1024"
-                                    xlink:href="images/avatar/me-2.png"
-                                />
-                            </defs>
-                        </svg>
+                                    height="1042"
+                                >
+                                    <path
+                                        d="M512 0C229.23 0 0 229.23 0 512C0 595.712 20.0899 674.731 55.7114 744.5L24 783L181 969.5L285 1017L392 1028L394.5 1011C430.547 1019.04 473.528 1024 512 1024C549.051 1024 591.183 1018.48 626 1011L632 1042L729.5 1028L854 966L907.5 898.5L962.5 842L978 794L961.139 758C1001.21 684.994 1024 601.159 1024 512C1024 229.23 794.77 0 512 0Z"
+                                        fill="black"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0_24_56)">
+                                    <rect x="-2" width="1024" height="1024" fill="url(#pattern0)" />
+                                </g>
+                                <defs>
+                                    <pattern
+                                        id="pattern0"
+                                        patternContentUnits="objectBoundingBox"
+                                        width="1"
+                                        height="1"
+                                    >
+                                        <use
+                                            xlink:href="#image0_24_56"
+                                            transform="scale(0.000976562)"
+                                        />
+                                    </pattern>
+                                    <image
+                                        id="image0_24_56"
+                                        width="1024"
+                                        height="1024"
+                                        xlink:href="images/avatar/me-2.png"
+                                    />
+                                </defs>
+                            </svg>
+                        </div>
 
+                        <a href="#" title="Download CV" class="welcome__cv-btn btn btn__fill">
+                            <span class="text">CV</span>
+                            <span class="icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-download"
+                                >
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                                    <path d="M7 11l5 5l5 -5" />
+                                    <path d="M12 4l0 12" />
+                                </svg>
+                            </span>
 
-                        <a
-                            href=""
-                            title="Download CV"
-                            download="cv.md"
-                            class="welcome__cv-btn btn btn__fill"
-                        >
-                            CV
+                            <div class="circles">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                            </div>
                         </a>
                     </article>
                 </section>
@@ -147,8 +184,12 @@
                 <div class="about-me__bg">
                     <div class="square square-1"></div>
                     <div class="square square-2"></div>
+                    <div class="square square-3"></div>
+                    <div class="square square-4"></div>
+                    <div class="square square-5"></div>
+                    <div class="square square-6"></div>
                 </div>
-                <article class="about-me__main">
+                <article class="about-me__main" id="about-me">
                     <article class="about-me__text">
                         <div>
                             <h2 class="about-me__header">Обо мне</h2>
@@ -172,9 +213,106 @@
                                 </div>
                             </div>
                         </div>
+                        <article class="about-me__text-avatar avatar">
+                            <svg
+                                viewBox="0 0 1192 1035"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <circle cx="512" cy="512" r="512" fill="currentColor" />
+                                <mask
+                                    id="mask0_7_10"
+                                    style="mask-type: alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
+                                    width="1183"
+                                    height="1024"
+                                >
+                                    <path
+                                        d="M0 512C0 794.77 229.23 1024 512 1024C616.201 1024 713.131 992.872 794 939.408C794 939.408 1037.5 1014.5 1089 993C1140.5 971.5 1175.5 934 1182 879.5C1185.25 852.228 1122.53 701.413 1095 574.5C1067.51 447.796 1075.24 344.985 1058.5 327C1025 291 947.724 243 947.724 243C857.497 97.1605 696.095 0 512 0C229.23 0 0 229.23 0 512Z"
+                                        fill="currentColor"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0_7_10)">
+                                    <path d="M135 33H1159V1057H135V33Z" fill="url(#pattern1)" />
+                                </g>
+                                <defs>
+                                    <pattern
+                                        id="pattern1"
+                                        patternContentUnits="objectBoundingBox"
+                                        width="1"
+                                        height="1"
+                                    >
+                                        <use
+                                            xlink:href="#image0_7_10"
+                                            transform="scale(0.000244141)"
+                                        />
+                                        <image
+                                            id="image0_7_10"
+                                            width="4096"
+                                            height="4096"
+                                            xlink:href="images/avatar/me-1.png"
+                                        ></image>
+                                    </pattern>
+                                </defs>
+                            </svg>
+                        </article>
                     </article>
 
-                    <article class="about-me__skills">
+                    <article class="about-me__skills" id="skills">
+                        <article class="about-me__skills-avatar avatar">
+                            <svg
+                                viewBox="0 0 1058 1057"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <circle cx="546" cy="512" r="512" fill="currentColor" />
+                                <mask
+                                    id="mask0_25_69"
+                                    style="mask-type: alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
+                                    width="1058"
+                                    height="1024"
+                                >
+                                    <path
+                                        d="M546 1024C828.77 1024 1058 794.77 1058 512C1058 229.23 828.77 0 546 0C294.638 0 85.582 181.137 42.2431 420L4.5 457.5L0 478.5C2.33333 485.5 9.4 502.7 19 515.5C28.6 528.3 33.243 531.5 34.3645 531.5C44.6146 805.234 269.759 1024 546 1024Z"
+                                        fill="black"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0_25_69)">
+                                    <rect
+                                        x="-57"
+                                        width="1024"
+                                        height="1024"
+                                        fill="url(#pattern2)"
+                                    />
+                                </g>
+                                <defs>
+                                    <pattern
+                                        id="pattern2"
+                                        patternContentUnits="objectBoundingBox"
+                                        width="1"
+                                        height="1"
+                                    >
+                                        <use
+                                            xlink:href="#image0_25_69"
+                                            transform="scale(0.000976562)"
+                                        />
+                                    </pattern>
+                                    <image
+                                        id="image0_25_69"
+                                        width="1024"
+                                        height="1024"
+                                        xlink:href="images/avatar/me-4.png"
+                                    />
+                                </defs>
+                            </svg>
+                        </article>
                         <div>
                             <h2 class="about-me__header">Навыки</h2>
                             <div class="about-me__content skills">
@@ -189,6 +327,65 @@
                                 <img src="images/skills/docker-original.svg" />
                                 <img src="images/skills/linux-original.svg" />
                                 <img src="images/skills/redis-original.svg" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="about-me__projects" id="projects">
+                        <div>
+                            <h2 class="about-me__header">Проекты</h2>
+                            <div class="about-me__content ref">
+                                <p>Пришло время рефакторить проекты</p>
+
+                                <div class="about-me__projects-avatar avatar">
+                                    <svg
+                                        viewBox="0 0 1024 1024"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    >
+                                        <circle cx="512" cy="512" r="512" fill="currentColor" />
+                                        <mask
+                                            id="mask0_25_77"
+                                            style="mask-type: alpha"
+                                            maskUnits="userSpaceOnUse"
+                                            x="0"
+                                            y="0"
+                                            width="1024"
+                                            height="1024"
+                                        >
+                                            <circle cx="512" cy="512" r="512" fill="#D9D9D9" />
+                                        </mask>
+                                        <g mask="url(#mask0_25_77)">
+                                            <rect
+                                                x="10"
+                                                y="17"
+                                                width="1024"
+                                                height="1024"
+                                                fill="url(#pattern3)"
+                                            />
+                                        </g>
+                                        <defs>
+                                            <pattern
+                                                id="pattern3"
+                                                patternContentUnits="objectBoundingBox"
+                                                width="1"
+                                                height="1"
+                                            >
+                                                <use
+                                                    xlink:href="#image0_25_77"
+                                                    transform="scale(0.000976562)"
+                                                />
+                                            </pattern>
+                                            <image
+                                                id="image0_25_77"
+                                                width="1024"
+                                                height="1024"
+                                                xlink:href="images/avatar/me-3.png"
+                                            />
+                                        </defs>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </article>
