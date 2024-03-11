@@ -124,27 +124,34 @@ p {
   border: 2px solid #efa857;
   transition: background-color 0.5s cubic-bezier(0.3, -0.63, 0.56, 1.39), color 0.5s cubic-bezier(0.3, -0.63, 0.56, 1.39), border 0.5s cubic-bezier(0.3, -0.63, 0.56, 1.39);
 }
-.btn__stroke:hover {
-  background-color: #efbb80;
-  color: #222222;
+@media (hover: hover) {
+  .btn__stroke:hover {
+    background-color: #efbb80;
+  }
 }
-.btn__stroke:active {
-  background-color: #ad7536;
-  border: 2px solid #ad7536;
-  transition: background-color 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39), border 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39);
+@media (hover: none) {
+  .btn__stroke:active {
+    background-color: #ad7536;
+    border: 2px solid #ad7536;
+    transition: background-color 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39), border 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39);
+  }
 }
 .btn__fill {
   border-radius: 2rem;
   background-color: #df8722;
   transition: background-color 0.5s cubic-bezier(0.3, -0.63, 0.56, 1.39), color 0.5s cubic-bezier(0.3, -0.63, 0.56, 1.39);
 }
-.btn__fill:hover {
-  background-color: #efbb80;
-  color: #222222;
+@media (hover: hover) {
+  .btn__fill:hover {
+    background-color: #efbb80;
+    color: #222222;
+  }
 }
-.btn__fill:active {
-  background-color: #ad7536;
-  transition: background-color 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39);
+@media (hover: none) {
+  .btn__fill:active {
+    background-color: #ad7536;
+    transition: background-color 0.1s cubic-bezier(0.3, -0.63, 0.56, 1.39);
+  }
 }
 
 .main {

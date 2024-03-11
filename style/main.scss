@@ -177,15 +177,19 @@ p {
         transition: background-color 0.5s $transition_btn, color 0.5s $transition_btn,
             border 0.5s $transition_btn;
 
-        &:hover {
-            background-color: $main-hover;
-            color: $black;
+        @media (hover: hover) {
+            &:hover {
+                background-color: $main-hover;
+                // color: $black;
+            }
         }
 
-        &:active {
-            background-color: $main-active;
-            border: 2px solid $main-active;
-            transition: background-color 0.1s $transition_btn, border 0.1s $transition_btn;
+        @media (hover: none) {
+            &:active {
+                background-color: $main-active;
+                border: 2px solid $main-active;
+                transition: background-color 0.1s $transition_btn, border 0.1s $transition_btn;
+            }
         }
     }
 
@@ -195,14 +199,18 @@ p {
 
         transition: background-color 0.5s $transition_btn, color 0.5s $transition_btn;
 
-        &:hover {
-            background-color: $main-hover;
-            color: $black;
+        @media (hover: hover) {
+            &:hover {
+                background-color: $main-hover;
+                color: $black;
+            }
         }
 
-        &:active {
-            background-color: $main-active;
-            transition: background-color 0.1s $transition_btn;
+        @media (hover: none) {
+            &:active {
+                background-color: $main-active;
+                transition: background-color 0.1s $transition_btn;
+            }
         }
     }
 }
